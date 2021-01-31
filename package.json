@@ -1,5 +1,5 @@
 {
-  "name": "1uphealth-coding-challenge",
+  "name": "1uphealth-dashboard",
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
