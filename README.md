@@ -7,7 +7,7 @@ Then, you'll be prompted with a button to get all data for that patient ID, usin
 
 ## Prerequisites
 
-You'll need to create a .env file in the project directory to set your `CLIENT_ID` and `CLIENT_SECRET`.
+You'll need to create a .env file in the project directory to set your `CLIENT_ID` and `CLIENT_SECRET` from your 1upHealth dev account.
 
 ## Available Scripts
 
