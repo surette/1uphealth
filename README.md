@@ -1,9 +1,9 @@
 # Getting Started with 1upHealth Dashboard
 
-The 1upHealth Dashboard app takes you through a workflow beginning with a user ID. After entering a user ID (12345), you'll be given a "Connect to Cerner" link, to log in to your health system and approve the access.
+The 1upHealth Dashboard app takes you through a workflow beginning with a user ID. After entering a user ID, the app will generate an access token which will be passed to all subsequent API calls. You'll be given a "Connect to Cerner" link, to log in to your Cerner health system and approve access to medical data.
 
-After approving access, return to the dashboard and press the "Get patient ID" button to retrieve the patient ID of the patient in the system.
-Then, you'll be prompted with a button to get all data for that patient ID, using the FHIR $everything query.
+After approving access, return to the dashboard and press the "Get patient ID" button to retrieve the patient ID of the patient in the Cerner system.
+Then, you'll be prompted with a button to get all data for that patient using the FHIR $everything query.
 
 ## Prerequisites
 
