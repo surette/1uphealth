@@ -7,6 +7,7 @@ class App extends Component {
     accessCode: "",
     accessToken: "",
     patientId: "",
+    patientName: "",
     everything: "",
   };
 
@@ -34,6 +35,7 @@ class App extends Component {
       }),
     }).then((r) => r.json());
     this.setState({ patientId: patientId.entry[0].resource.id });
+    this.setState({ patientName: patientId.entry[0].resource.name[0].text });
   };
 
   getEverything = async (e) => {
@@ -67,7 +69,7 @@ class App extends Component {
             <p>1upHealth Dashboard</p>
           </header>
           <button type="button" onClick={this.getEverything}>
-            Get everything for patient {this.state.patientId}
+            Get everything for patient {this.state.patientName}
           </button>
         </div>
       );
@@ -81,12 +83,13 @@ class App extends Component {
             <a
               className="App-link"
               href={`https://api.1up.health/connect/system/clinical/4707?client_id=ac4a5562a1fe5aaf1fa0db5399f3c1ad&amp;access_token=${this.state.accessToken}`}
+              target="_blank"
             >
               Connect to Cerner
             </a>
           </p>
           <button type="button" onClick={this.getPatientId}>
-            Get patient ID
+            Get patient
           </button>
         </div>
       );
@@ -97,11 +100,9 @@ class App extends Component {
             <p>1upHealth Dashboard</p>
           </header>
           <form onSubmit={this.generateAccessToken}>
-            <p>
-              <strong>Enter user ID:</strong>
-            </p>
             <input
               type="text"
+              placeholder="Enter user ID"
               value={this.state.userId}
               onChange={(e) => this.setState({ userId: e.target.value })}
             />

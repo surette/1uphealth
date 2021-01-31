@@ -1,8 +1,8 @@
 # Getting Started with 1upHealth Dashboard
 
-The 1upHealth Dashboard app takes you through a workflow beginning with a user ID. After entering a user ID, the app will generate an access token which will be passed to all subsequent API calls. You'll be given a "Connect to Cerner" link, to log in to your Cerner health system and approve access to medical data.
+The 1upHealth Dashboard app takes you through a workflow to retrieve a patient's medical data beginning with a 1upHealth user ID. After entering a user ID, the app will generate an access token which will be passed along with all subsequent API calls. You'll then be given a "Connect to Cerner" link to log in to the Cerner health system and approve access to medical data.
 
-After approving access, return to the dashboard and press the "Get patient ID" button to retrieve the patient ID of the patient in the Cerner system.
+After approving access, return to the dashboard and press the "Get patient" button to retrieve the name of the test patient in the Cerner system.
 Then, you'll be prompted with a button to get all data for that patient using the FHIR $everything query.
 
 ## Prerequisites
@@ -19,4 +19,4 @@ Installs all of the dependencies used in the app.
 
 ### `yarn dev`
 
-Starts the React app at [http://localhost:3000](http://localhost:3000) and the Node.js server at [http://localhost:5000](http://localhost:5000).
+Starts the React app at [http://localhost:3000](http://localhost:3000) and the Node.js server at [http://localhost:8000](http://localhost:8000).
