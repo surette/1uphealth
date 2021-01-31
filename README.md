@@ -15,8 +15,8 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Installs all of the dependencies used in the app.
+Installs all of the dependencies used in the app. You should also run `npm install` from the client directory to install dependencies for the front-end.
 
-### `yarn dev`
+### `npm run dev`
 
 Starts the React app at [http://localhost:3000](http://localhost:3000) and the Node.js server at [http://localhost:8000](http://localhost:8000).
