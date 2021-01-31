@@ -13,6 +13,10 @@ const clientSecret = process.env.CLIENT_SECRET;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.sendFile('client/public/index.html');
+});
+
 // generate access code based on user id
 app.post("/api/codes/:uid", async (req, res) => {
   const options = {
