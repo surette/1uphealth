@@ -84,6 +84,7 @@ class App extends Component {
               className="App-link"
               href={`https://api.1up.health/connect/system/clinical/4707?client_id=ac4a5562a1fe5aaf1fa0db5399f3c1ad&amp;access_token=${this.state.accessToken}`}
               target="_blank"
+              rel="noreferrer"
             >
               Connect to Cerner
             </a>
